@@ -1,5 +1,29 @@
 # MyMac .dotfiles Cheatsheets
 
+## ZSH-Cheatsheet
+
+| Shortcut | Function                                          |
+| -------- | ------------------------------------------------- |
+| ll       | List dir                                          |
+| lt       | List dir w/ tree                                  |
+| so       | Reset config.                                     |
+| zconfig  | Open zsh config file                              |
+| kconfig  | Open kitty config file                            |
+| vconfig  | Open nvim .config                                 |
+| tconfig  | Open tmux.conf file                               |
+| cda      | Activate data analysis env.                       |
+| base     | Activate base env.                                |
+| qt       | Activate Qt env.                                  |
+| v.       | Open nvim project on current directory            |
+| gitback  | Reset git repo in current directory               |
+| vqt      | Open nvim project and activate Qt env.            |
+| vda      | Open nvim project and activate data analysis env. |
+| proj     | Change my project directory                       |
+| fof      | Search and open file using fzf (external)         |
+| fod      | Search and open director (external)               |
+| fcd      | Search and change directory                       |
+| ff       | Search and get path the file.                     |
+
 ## NVIM–Cheatsheet
 
 | Function                        | Pluggin                | shortcuts                                 |
@@ -52,6 +76,16 @@ brew install fd
 brew install ripgrep
 brew install fzf
 brew install bat
+brew install node
+brew install tree
+brew install miniconda
+brew install exa
+brew install git
+brew install lazygit
+brew install neovim
+brew install peco
+brew install stow
+brew install tmux
 
 ```
 
