@@ -4,3 +4,4 @@ misc
 ^/.*\.org
 \Google\ Drive
 .gitignore
+.DS_Store
