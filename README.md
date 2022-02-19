@@ -1,6 +1,6 @@
-# MyMac .dotfiles Cheatsheets
+# MyMac .dotfiles Cheat Sheets
 
-## ZSH-Cheatsheet
+## ZSH – Cheat Sheet
 
 | Shortcut | Function                                          |
 | -------- | ------------------------------------------------- |
@@ -18,13 +18,13 @@
 | gitback  | Reset git repo in current directory               |
 | vqt      | Open nvim project and activate Qt env.            |
 | vda      | Open nvim project and activate data analysis env. |
-| proj     | Change my project directory                       |
 | fof      | Search and open file using fzf (external)         |
 | fod      | Search and open director (external)               |
 | fcd      | Search and change directory                       |
-| ff       | Search and get path the file.                     |
+| ff       | Search and get path of file                       |
+| fo       | Seachr and get path of directory                  |
 
-## NVIM–Cheatsheet
+## NVIM – Cheat Sheet
 
 | Function                        | Pluggin                | shortcuts                                 |
 | ------------------------------- | ---------------------- | ----------------------------------------- |
@@ -68,6 +68,34 @@
 | Open LazyGit                    | toggleterm             | n: `<space>gg`                            |
 | Lsp Diagnostics All             | lspfuzzy               | n: `gf`                                   |
 
+
+
+## TMUX – Cheat Sheet
+
+> PREFIX :: `Ctrl+d`
+
+| Shortcut    | Function                                 |
+| ----------- | ---------------------------------------- |
+| tmux        | launch tmux                              |
+| tmux a      | Session attach                           |
+| c           | Create a new window                      |
+| w           | Get current windows list                 |
+| n           | Move to next window                      |
+| p           | Move to previous window                  |
+| l           | Move to the penultimate used window      |
+| [0–9]       | Move to the numbered window              |
+| f name      | Search in window's buffers               |
+| $           | Rename current session                   |
+| &           | Kill window                              |
+| t           | Show time                                |
+| "           | Split – vertical                         |
+| %           | Split – horizontal                       |
+| h-j-k-l     | Like vi command for change split windows |
+| D-[h-j-k-l] | Like vi command for resize split windows |
+| [           | Scroll mode (`q` for quit)               |
+
+
+
 ## Requirements:
 
 ```php
@@ -88,6 +116,14 @@ brew install stow
 brew install tmux
 
 ```
+### Addition
+
+- [z](https://github.com/agkozak/zsh-z)
+- [fzf](https://github.com/junegunn/fzf)
+- [peco](https://github.com/peco/peco)
+- [fd](https://github.com/sharkdp/fd)
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 ### Python-LSP
 
@@ -121,4 +157,6 @@ Example ignore error message:
 - [How to set up Neovim 0.5](https://blog.inkdrop.app/how-to-set-up-neovim-0-5-modern-plugins-lsp-treesitter-etc-542c3d9c9887)
 - [pyright/docs/configuration](pyright-doc.md)
 - [How to set up Neovim 0.5 + Modern plugins (LSP, Treesitter, Fuzzy finder, etc) | by Takuya Matsuyama | Dev as Life](https://blog.inkdrop.app/how-to-set-up-neovim-0-5-modern-plugins-lsp-treesitter-etc-542c3d9c9887)
+- [📹 Give Your Dotfiles a Home with GNU Stow](https://youtu.be/CxAT1u8G7is)
+- [Using GNU Stow to Manage Symbolic Links for Your Dotfiles - System Crafters](https://systemcrafters.net/managing-your-dotfiles/using-gnu-stow/)
 
