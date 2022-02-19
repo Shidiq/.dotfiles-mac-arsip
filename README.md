@@ -23,6 +23,8 @@
 | fcd      | Search and change directory                       |
 | ff       | Search and get path of file                       |
 | fo       | Seachr and get path of directory                  |
+| nb2pdfwc | Jupyter notebook to PDF with code                 |
+| nb2pdfnc | Jupyter notebook to PDF without code              |
 
 ## NVIM – Cheat Sheet
 
@@ -143,6 +145,27 @@ Example ignore error message:
 {
         "reportOptionalMemberAccess": false,
 }
+
+```
+
+### Pandoc–LaTex–Jupyter
+
+```bash
+
+brew install pandoc
+brew install --cask basictex
+
+sudo tlmgr update --self
+sudo tlmgr install texliveonfly
+sudo tlmgr install adjustbox
+sudo tlmgr install tcolorbox
+sudo tlmgr install collectbox
+sudo tlmgr install ucs
+sudo tlmgr install environ
+sudo tlmgr install trimspaces
+sudo tlmgr install titling
+sudo tlmgr install enumitem
+sudo tlmgr install rsfs
 
 ```
 ---
