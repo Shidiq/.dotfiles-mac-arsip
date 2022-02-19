@@ -69,3 +69,5 @@ Pods/
 
 # NVIM
 .config/nvim/plugged/
+
+.config/configstore

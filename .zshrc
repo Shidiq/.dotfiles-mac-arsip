@@ -153,3 +153,4 @@ alias helpme="bat ~/Documents/my-shortcut.md"
 
 alias nb2pdfwc='jupyter nbconvert --to pdf "`fd -g "*.ipynb" | peco`"'
 alias nb2pdfnc='jupyter nbconvert --no-input --to pdf "`fd -g "*.ipynb" | peco`"'
+alias tm='tmux'
