@@ -39,6 +39,7 @@ Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'onsails/lspkind-nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'mhartington/formatter.nvim'
+Plug 'p00f/nvim-ts-rainbow'
 
 call plug#end()
 

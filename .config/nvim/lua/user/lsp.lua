@@ -1,7 +1,7 @@
 --lspconfig
 
 local nvim_lsp = require('lspconfig')
-local servers = { 'pyright' }
+local servers = { 'pyright', 'tsserver', 'html' }
 
 local on_attach = function(client, bufnr)
     local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
@@ -26,6 +26,19 @@ local on_attach = function(client, bufnr)
     buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
     buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
     buf_set_keymap('n', 'gf', '<cmd>LspDiagnosticsAll<CR>', opts)
+
+    -- hover doc popup
+    local lsp = vim.lsp
+    local handlers = lsp.handlers
+
+    local pop_opts = { border = "rounded", max_width = 80 }
+    handlers["textDocument/hover"] = lsp.with(handlers.hover, pop_opts)
+    handlers["textDocument/signatureHelp"] = lsp.with(handlers.signature_help, pop_opts)
+    vim.lsp.buf.hover()
+    vim.lsp.buf.signature_help()
+    vim.lsp.diagnostic.show_line_diagnostics({focusable=false,border='rounded'})
+    vim.lsp.diagnostic.goto_prev({popup_opts={focusable=false,border='rounded'}})
+    vim.lsp.diagnostic.goto_next({popup_opts={focusable=false,border='rounded'}})   
 
 end
 

@@ -10,3 +10,4 @@ require('user/keymaps')
 require('user/lsp')
 require('user/formatting')
 require('lspfuzzy').setup { }
+require('user/treesitter')
