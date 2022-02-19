@@ -129,6 +129,7 @@ alias fcd='cd "`fd --type d | fzf --preview "tree -C {} | head -200"`"'
 # alias ff="fd --type f | fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
 alias ff="fd --type f | peco"
 alias fo="fd --type d | peco"
+alias q!="exit"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
