@@ -124,6 +124,7 @@ brew install tmux
 - [fd](https://github.com/sharkdp/fd)
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+- [lazygit](https://github.com/jesseduffield/lazygit)
 
 ### Python-LSP
 
