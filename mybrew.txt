@@ -8,6 +8,7 @@ fd
 fzf
 gettext
 git
+gnu-sed
 icu4c
 lazygit
 libevent

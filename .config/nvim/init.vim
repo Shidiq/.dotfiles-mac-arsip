@@ -12,6 +12,11 @@ Plug 'preservim/tagbar'
 Plug 'windwp/nvim-autopairs'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'akinsho/bufferline.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'karb94/neoscroll.nvim'
+Plug 'rcarriga/nvim-notify'
+Plug 'nacro90/numb.nvim'
+Plug 'windwp/nvim-spectre'
 
 " telescope
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }

@@ -11,3 +11,7 @@ require('user/lsp')
 require('user/formatting')
 require('lspfuzzy').setup { }
 require('user/treesitter')
+require('user/indentline')
+require('user/notify')
+require('user/numb')
+require('user/spectre')

@@ -7,7 +7,7 @@ require'nvim-tree'.setup {
   hijack_netrw         = true,
   open_on_setup        = false,
   ignore_ft_on_setup   = {},
-  auto_close           = false,
+  auto_close           = true,
   auto_reload_on_write = true,
   open_on_tab          = false,
   hijack_cursor        = false,
@@ -18,7 +18,7 @@ require'nvim-tree'.setup {
     auto_open = true,
   },
   diagnostics = {
-    enable = false,
+    enable = true,
     icons = {
       hint = "",
       info = "",
@@ -27,7 +27,7 @@ require'nvim-tree'.setup {
     }
   },
   update_focused_file = {
-    enable      = false,
+    enable      = true,
     update_cwd  = false,
     ignore_list = {}
   },
@@ -36,7 +36,7 @@ require'nvim-tree'.setup {
     args = {}
   },
   filters = {
-    dotfiles = false,
+    dotfiles = true,
     custom = {}
   },
   git = {
@@ -47,7 +47,7 @@ require'nvim-tree'.setup {
   view = {
     width = 30,
     height = 30,
-    hide_root_folder = false,
+    hide_root_folder = true,
     side = 'left',
     auto_resize = false,
     mappings = {
