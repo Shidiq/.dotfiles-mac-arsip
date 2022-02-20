@@ -100,7 +100,7 @@
 
 ## Requirements:
 
-```php
+```bash
 brew install ctags
 brew install fd
 brew install ripgrep
@@ -116,6 +116,8 @@ brew install neovim
 brew install peco
 brew install stow
 brew install tmux
+  
+sudo npm i -g eslint_d prettier
 
 ```
 ### Addition
