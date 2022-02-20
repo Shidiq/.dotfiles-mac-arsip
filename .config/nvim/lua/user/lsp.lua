@@ -40,6 +40,14 @@ local on_attach = function(client, bufnr)
     vim.lsp.diagnostic.goto_prev({popup_opts={focusable=false,border='rounded'}})
     vim.lsp.diagnostic.goto_next({popup_opts={focusable=false,border='rounded'}})   
 
+    -- autosave
+    if client.resolved_capabilities.document_formatting then
+        vim.api.nvim_command [[augroup Format]]
+        vim.api.nvim_command [[autocmd! * <buffer>]]
+        vim.api.nvim_command [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()]]
+        vim.api.nvim_command [[augroup END]]
+    end
+
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
