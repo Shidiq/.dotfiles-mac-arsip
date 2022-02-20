@@ -68,3 +68,9 @@ keymap('n', '<leader>sf', '<cmd>lua require("spectre").open()<cr>', opts)
 keymap('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<cr>', opts)
 keymap('v', '<leader>s', '<cmd>lua require("spectre").open_visual()<cr>', opts)
 keymap('n', '<leader>sp', '<cmd>lua require("spectre").open_file_search()<cr>', opts)
+
+-- vimux
+keymap('n', '<leader>vp', '<cmd>VimuxPromptCommand<cr>', opts)
+keymap('n', '<leader>vl', '<cmd>VimuxRunLastCommand<cr>', opts)
+keymap('n', '<leader>vi', '<cmd>VimuxInspectRunner<cr>', opts)
+keymap('n', '<leader>vz', '<cmd>VimuxZoomRunner<cr>', opts)

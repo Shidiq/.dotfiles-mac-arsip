@@ -17,6 +17,7 @@ Plug 'karb94/neoscroll.nvim'
 Plug 'rcarriga/nvim-notify'
 Plug 'nacro90/numb.nvim'
 Plug 'windwp/nvim-spectre'
+Plug 'preservim/vimux'
 
 " telescope
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
