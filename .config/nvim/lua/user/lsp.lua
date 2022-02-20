@@ -1,7 +1,8 @@
 --lspconfig
 
 local nvim_lsp = require('lspconfig')
-local servers = { 'pyright', 'tsserver', 'html' }
+local servers = { 'pylsp', 'tsserver', 'html' }
+-- local servers = { 'pyright', 'tsserver', 'html' }
 
 local on_attach = function(client, bufnr)
     local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
@@ -114,7 +115,8 @@ cmp.setup {
 -- lsp diagnostif for ESLint and Prettier (JS)
 nvim_lsp.diagnosticls.setup {
     on_attach = on_attach,
-    filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'markdown', 'pandoc' },
+    filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'pandoc' },
+    -- filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'markdown', 'pandoc' },
     init_options = {
         linters = {
             eslint = {
@@ -165,7 +167,7 @@ nvim_lsp.diagnosticls.setup {
             typescript = 'eslint_d',
             typescriptreact = 'eslint_d',
             json = 'prettier',
-            markdown = 'prettier',
+            -- markdown = 'prettier',
         }
     }
 }

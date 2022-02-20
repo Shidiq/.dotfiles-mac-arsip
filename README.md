@@ -138,6 +138,8 @@ sudo npm i -g eslint_d prettier
 	- black
 	- isort
 
+> Alternatif using `pylsp` for better formatting: `pip install "python-lsp-server[all]"`
+
 #### pyrightconfig.json
 
 Example ignore error message:
