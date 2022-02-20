@@ -62,3 +62,9 @@ keymap('n', '<leader>n',"<cmd>NvimTreeFindFile<cr>", opts)
 
 -- toggleterm
 keymap('n', '<leader>gg', "<cmd>lua _LAZYGIT_TOGGLE()<cr>", opts)
+
+-- spectre
+keymap('n', '<leader>sf', '<cmd>lua require("spectre").open()<cr>', opts)
+keymap('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<cr>', opts)
+keymap('v', '<leader>s', '<cmd>lua require("spectre").open_visual()<cr>', opts)
+keymap('n', '<leader>sp', '<cmd>lua require("spectre").open_file_search()<cr>', opts)

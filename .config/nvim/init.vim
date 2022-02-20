@@ -53,4 +53,6 @@ lua require ('user')
 nmap <silent> <F8> :TagbarToggle<CR>
 nmap <silent> <F9> :FormatWrite<CR>
 
+map <C-d> <Nop>
+
 :colorscheme onedark
