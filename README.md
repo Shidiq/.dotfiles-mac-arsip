@@ -69,7 +69,14 @@
 | Open terminal                   | toggleterm             | Ctrl+\                                    |
 | Open LazyGit                    | toggleterm             | n: `<space>gg`                            |
 | Lsp Diagnostics All             | lspfuzzy               | n: `gf`                                   |
-
+| Spectre Open                    | spectre                | n: `<space>sf`                            |
+| Spectre Open Visual Select      | spectre                | n: `<space>sw`                            |
+| Spectre Open Visual             | spectre                | v: `<space>s`                             |
+| Spectre Open File Search        | spectre                | n: `<space>sp`                            |
+| Vimux Prompt Command            | vimux                  | n: `<space>vp`                            |
+| Vimux Run Last Command          | vimux                  | n: `<space>vl`                            |
+| Vimux Inspect Runner            | vimux                  | n: `<space>vi`                            |
+| Vimux Zoom Runner               | vimux                  | n: `<space>vz`                            |
 
 
 ## TMUX – Cheat Sheet
@@ -90,8 +97,8 @@
 | $           | Rename current session                   |
 | &           | Kill window                              |
 | t           | Show time                                |
-| "           | Split – vertical                         |
-| %           | Split – horizontal                       |
+| " or `|`    | Split – vertical                         |
+| % or `-`    | Split – horizontal                       |
 | h-j-k-l     | Like vi command for change split windows |
 | D-[h-j-k-l] | Like vi command for resize split windows |
 | [           | Scroll mode (`q` for quit)               |
@@ -179,12 +186,12 @@ sudo tlmgr install rsfs
 - [🌐 Switching to NeoVim Native LSP | Mark Story](https://mark-story.com/posts/view/switching-to-neovim-native-lsp)
 - [📽️ Up And Running With Neovim + LSP](https://youtu.be/36o52-2_83M)
 - [📽️ Neovim - NvimTree File Explorer Written In Lua](https://youtu.be/SpexCBrZ1pQ)
-- [craftzdog/dotfiles-public: My personal dotfiles](https://github.com/craftzdog/dotfiles-public)
-- [jakewies/.dotfiles: My portable development environment](https://github.com/jakewies/.dotfiles)
-- [ChristianChiarulli/nvim: My neovim config](https://github.com/ChristianChiarulli/nvim)
-- [How to set up Neovim 0.5](https://blog.inkdrop.app/how-to-set-up-neovim-0-5-modern-plugins-lsp-treesitter-etc-542c3d9c9887)
-- [pyright/docs/configuration](pyright-doc.md)
-- [How to set up Neovim 0.5 + Modern plugins (LSP, Treesitter, Fuzzy finder, etc) | by Takuya Matsuyama | Dev as Life](https://blog.inkdrop.app/how-to-set-up-neovim-0-5-modern-plugins-lsp-treesitter-etc-542c3d9c9887)
+- [🌐 craftzdog/dotfiles-public: My personal dotfiles](https://github.com/craftzdog/dotfiles-public)
+- [🌐 jakewies/.dotfiles: My portable development environment](https://github.com/jakewies/.dotfiles)
+- [🌐 ChristianChiarulli/nvim: My neovim config](https://github.com/ChristianChiarulli/nvim)
+- [🌐 How to set up Neovim 0.5](https://blog.inkdrop.app/how-to-set-up-neovim-0-5-modern-plugins-lsp-treesitter-etc-542c3d9c9887)
+- [🌐 pyright/docs/configuration](pyright-doc.md)
+- [🌐 How to set up Neovim 0.5 + Modern plugins (LSP, Treesitter, Fuzzy finder, etc) | by Takuya Matsuyama | Dev as Life](https://blog.inkdrop.app/how-to-set-up-neovim-0-5-modern-plugins-lsp-treesitter-etc-542c3d9c9887)
 - [📹 Give Your Dotfiles a Home with GNU Stow](https://youtu.be/CxAT1u8G7is)
-- [Using GNU Stow to Manage Symbolic Links for Your Dotfiles - System Crafters](https://systemcrafters.net/managing-your-dotfiles/using-gnu-stow/)
+- [🌐 Using GNU Stow to Manage Symbolic Links for Your Dotfiles - System Crafters](https://systemcrafters.net/managing-your-dotfiles/using-gnu-stow/)
 
