@@ -108,6 +108,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias -g vim="nvim"
 alias ll="exa --all --long --icons"
+alias ls="exa --icons"
 alias lt="exa --all --long --tree --level=3 --icons"
 alias so="source ~/.zshrc"
 alias zconfig="nvim ~/.zshrc"

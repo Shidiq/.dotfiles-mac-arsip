@@ -7,3 +7,5 @@ misc
 .DS_Store
 mybrew.txt
 README.md
+\.go
+\.R-setup

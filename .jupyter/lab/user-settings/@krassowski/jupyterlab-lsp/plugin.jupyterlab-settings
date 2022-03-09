@@ -1,21 +1,26 @@
 {
-  "language_servers": {
-    "pyls": {
-      "serverSettings": {
-        "pyls": {
-          "plugins": {
-            "pydocstyle": {
-              "enabled": true
+    "language_servers": {
+        "Language Server": {
+            "serverSettings": {
+                "pyls": {
+                    "plugins": {
+                        "pydocstyle": {
+                            "enabled": true
+                        },
+                        "pyflakes": {
+                            "enabled": false
+                        },
+                        "flake8": {
+                            "enabled": true
+                        }
+                    }
+                }
             },
-            "pyflakes": {
-              "enabled": false
-            },
-            "flake8": {
-              "enabled": true
-            }
-          }
+            "priority": 50
         }
-      }
-    }
-  }
+    },
+    "loggingConsole": "browser",
+    "loggingLevel": "warn",
+    "logAllCommunication": false,
+    "setTrace": null
 }

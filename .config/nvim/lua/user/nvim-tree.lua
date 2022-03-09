@@ -6,6 +6,7 @@ require'nvim-tree'.setup {
   disable_netrw        = false,
   hijack_netrw         = true,
   open_on_setup        = false,
+  ignore_buffer_on_setup = false,
   ignore_ft_on_setup   = {},
   auto_close           = true,
   auto_reload_on_write = true,
@@ -18,7 +19,7 @@ require'nvim-tree'.setup {
     auto_open = true,
   },
   diagnostics = {
-    enable = true,
+    enable = false,
     icons = {
       hint = "",
       info = "",
@@ -27,7 +28,7 @@ require'nvim-tree'.setup {
     }
   },
   update_focused_file = {
-    enable      = true,
+    enable      = false,
     update_cwd  = false,
     ignore_list = {}
   },
@@ -36,20 +37,20 @@ require'nvim-tree'.setup {
     args = {}
   },
   filters = {
-    dotfiles = true,
+    dotfiles = false,
     custom = {}
   },
   git = {
     enable = true,
-    ignore = false,
+    ignore = true,
     timeout = 500,
   },
   view = {
     width = 30,
     height = 30,
-    hide_root_folder = true,
+    hide_root_folder = false,
     side = 'left',
-    auto_resize = false,
+    preserve_window_proportions = false,
     mappings = {
       custom_only = false,
       list = {}
@@ -64,10 +65,20 @@ require'nvim-tree'.setup {
   },
   actions = {
     change_dir = {
+      enable = true,
       global = false,
     },
     open_file = {
       quit_on_open = false,
+      resize_window = false,
+      window_picker = {
+        enable = true,
+        chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
+        exclude = {
+          filetype = { "notify", "packer", "qf", "diff", "fugitive", "fugitiveblame", },
+          buftype  = { "nofile", "terminal", "help", },
+        }
+      }
     }
   }
 }
